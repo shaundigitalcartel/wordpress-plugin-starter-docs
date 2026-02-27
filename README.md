@@ -6,6 +6,7 @@ Reusable docs and workflow helpers for all WordPress plugin repos.
 - `LEARNINGS.template.md`
 - `TESTING.template.md`
 - `init-plugin-docs.sh`
+- `ENVIRONMENT.md`
 
 ## Usage in a plugin repo
 1. Copy these files into your plugin repo (or add as a git submodule/subtree).
