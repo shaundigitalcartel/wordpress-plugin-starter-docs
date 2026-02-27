@@ -22,6 +22,7 @@ Read before edits. Append key learnings after changes.
 - Input sanitization patterns:
 - Output escaping patterns:
 - Sensitive data rules:
+- Admin notice policy: suppress unrelated wp-admin/plugin notices on our plugin screen to keep UX focused.
 
 ## Versioning
 - Current version:

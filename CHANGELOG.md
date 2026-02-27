@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.1
+- Added learnings template guidance to suppress unrelated wp-admin/plugin notices on plugin screens.
+
 ## 0.2.0
 - Added `DESIGN.template.md` for consistent admin UI standards across plugins.
 - Fixed `init-plugin-docs.sh` to work directly from starter repo files.
