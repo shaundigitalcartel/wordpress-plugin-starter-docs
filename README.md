@@ -5,6 +5,7 @@ Reusable docs and workflow helpers for all WordPress plugin repos.
 ## Included
 - `LEARNINGS.template.md`
 - `TESTING.template.md`
+- `DESIGN.template.md`
 - `init-plugin-docs.sh`
 - `ENVIRONMENT.md`
 
@@ -17,6 +18,7 @@ bash init-plugin-docs.sh .
 3. This creates:
 - `LEARNINGS.md`
 - `TESTING.md`
+- `DESIGN.md`
 
 ## Suggested release flow
 - `make bump VERSION=x.y.z`

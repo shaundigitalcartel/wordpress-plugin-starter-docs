@@ -2,16 +2,18 @@
 set -euo pipefail
 
 ROOT="${1:-.}"
-TPL_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../templates/wordpress-plugin" && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-if [[ ! -d "$TPL_DIR" ]]; then
-  echo "Template directory not found: $TPL_DIR"
+if [[ ! -f "$SCRIPT_DIR/LEARNINGS.template.md" ]]; then
+  echo "Template file not found: $SCRIPT_DIR/LEARNINGS.template.md"
   exit 1
 fi
 
-cp -f "$TPL_DIR/LEARNINGS.md" "$ROOT/LEARNINGS.md"
-cp -f "$TPL_DIR/TESTING.md" "$ROOT/TESTING.md"
+cp -f "$SCRIPT_DIR/LEARNINGS.template.md" "$ROOT/LEARNINGS.md"
+cp -f "$SCRIPT_DIR/TESTING.template.md" "$ROOT/TESTING.md"
+cp -f "$SCRIPT_DIR/DESIGN.template.md" "$ROOT/DESIGN.md"
 
 echo "Initialized plugin docs in: $ROOT"
 echo "- LEARNINGS.md"
 echo "- TESTING.md"
+echo "- DESIGN.md"
