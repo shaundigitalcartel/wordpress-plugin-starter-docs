@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.2
+- Updated learnings template with packaging and admin-ajax smoke-check guidance.
+- Updated design template to light/dark-only theme standard and dark-mode contrast requirements.
+
 ## 0.2.1
 - Added learnings template guidance to suppress unrelated wp-admin/plugin notices on plugin screens.
 

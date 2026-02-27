@@ -33,11 +33,13 @@ Read before edits. Append key learnings after changes.
   - Pack script zip filename
   - Changelog heading
   - Any user-facing version docs
+- Packaging rule: zip should contain a single root folder matching plugin slug (for example `plugin-slug/...`) so uploads replace existing installs cleanly.
 
 ## Testing
 - Local stack:
 - Smoke checks:
 - Regression-prone paths:
+- Admin-AJAX smoke check should assert response is JSON (never raw `0`).
 
 ## Release
 - Required flow:

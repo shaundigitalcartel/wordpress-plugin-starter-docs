@@ -5,7 +5,7 @@ This file defines the shared MMX admin design system for WordPress plugins.
 ## Goals
 - Consistent look and behavior across all plugin admin pages.
 - Fast to scan, keyboard-friendly, and readable.
-- Simple to theme (light/dark + accent).
+- Simple to theme (light/dark only).
 
 ## Core Layout
 - Wrap all plugin UI inside `.mmx`.
@@ -15,6 +15,7 @@ This file defines the shared MMX admin design system for WordPress plugins.
   - Card grid
   - Important Notes section
 - Default card grid: 12 columns desktop, full width cards on smaller screens.
+- Important Notes must have visible spacing above it (never flush against previous container).
 
 ## Components
 - Buttons:
@@ -32,15 +33,18 @@ This file defines the shared MMX admin design system for WordPress plugins.
   - Long enough visibility for debugging
 
 ## Theme
+- Theme control should be a simple Light/Dark toggle.
 - Theme toggle must switch full plugin panel (not just text color).
 - Dark mode must update:
   - Admin canvas background
   - Card surfaces
   - Inputs/selects/buttons
   - Text and muted text colors
+- Dark mode should maintain clear tonal layering:
+  - Background, card, and field/code surfaces should be different greys.
+- Plugin title should remain high-contrast in dark mode (white or near-white).
 - Persist in localStorage:
   - `mmx_theme`
-  - `mmx_accent`
 
 ## Accessibility
 - Visible focus states.
